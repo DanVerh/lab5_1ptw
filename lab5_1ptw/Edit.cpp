@@ -7,13 +7,8 @@ using namespace std;
 
 bool NumberCheck(char str)
 {
-    if (str == '1' || str == '2' || str == '3' || str == '4' || str == '5' || str == '6' || str == '7' || str == '8' || str == '9' || str == '0'){
-        return false;
-    }
-    else
-    {
-        return true;
-    }
+    string s = "0123456789";
+    return s.find_first_of(str) == -1;
 }
 
 
